@@ -1,0 +1,35 @@
+.slider-indicators {
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+    bottom: 0;
+    z-index: 100;
+}
+
+.slider-indicator {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    background: #fff;
+    overflow: hidden;
+}
+
+.slider-indicator:not(:first-child) {
+    margin-left: 20px;
+}
+
+.active-indicator {
+    background-color: #666;
+}
+
+.slider-indicator:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}

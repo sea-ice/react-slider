@@ -1,0 +1,51 @@
+.slider-arrows {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.left-arrow, .right-arrow {
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+    background-color: rgba(163, 163, 163, .5);
+    cursor: pointer;
+}
+
+.left-arrow:hover i, .right-arrow:hover i {
+    display: block;
+}
+
+.left-arrow {
+    float: left;
+}
+
+.right-arrow {
+    float: right;
+}
+
+.left-arrow i, .right-arrow i {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -20px;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.left-arrow i {
+    background-image: url(./images/left.svg);
+}
+
+.right-arrow i {
+    background-image: url(./images/right.svg);
+}
